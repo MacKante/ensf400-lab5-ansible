@@ -1,0 +1,5 @@
+- hosts: "{{ target_host }}"
+  tasks:
+    - name: Retrieve IP address
+      debug:
+        msg: "{{ ansible_default_ipv4.address }}"
